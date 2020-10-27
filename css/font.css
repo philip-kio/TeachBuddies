@@ -1,0 +1,87 @@
+/*---------FOnt Family Oswald-------------*/
+
+
+@font-face{
+    font-family: oswald;
+    src: url('../fonts/Oswald/static/Oswald-Bold.ttf');
+}
+
+
+
+@font-face{
+    font-family: oswalds;
+    src: url('../fonts/Oswald/static/Oswald-Regular.ttf');
+}
+
+/*---------FOnt Family Noto-------------*/
+
+
+
+
+@font-face{
+    font-family: Noto;
+    src: url('../fonts/Noto_Sans_TC/NotoSansTC-Regular.otf');
+
+}
+
+
+
+
+
+/*---------FOnt Family rale-------------*/
+
+
+@font-face{
+    font-family: raleway;
+    src: url('../fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+
+
+
+/*font Family Abel*/
+
+@font-face{
+    font-family: Abel;
+    src: url('../font/Abel/Abel-Regular.ttf')
+
+}
+
+
+
+
+/*font Family Anton*/
+
+@font-face{
+    font-family: Anton;
+    src: url('../font/Anton/Anton-Regular.ttf')
+
+}
+
+/*font Family Josefin*/
+
+@font-face{
+    font-family: Josefin;
+    src: url('../font/Josefin_Sans/static/JosefinSans-Regular.ttf')
+
+}
+
+
+/*font Family Livic*/
+
+@font-face{
+    font-family: Livic;
+    src: url('../font/Livvic/Livvic-Regular.ttf')
+
+}
+
+
+/*font Family Lexend*/
+
+@font-face{
+    font-family: Lexend;
+    src: url('../font/Lexend_Deca/LexendDeca-Regular.ttf')
+
+}
+
+

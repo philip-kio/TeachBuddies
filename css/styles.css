@@ -1,0 +1,723 @@
+@import url('../css/font.css');
+
+
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+
+/*-----------------Global Variables---------------------------*/
+
+:root{
+    /*Theme Colors*/
+
+    --text-gray:#F7F7F2;
+    --text-wine:#590004;
+    --white: #ffffff;
+    --bg-dark: #0f0f0f;
+    --text-wine2:#250001;
+
+    --gradient: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    --background-blend-mode: multiply,multiply;
+    --text-grey: #3f4954;
+    --midnight:#104f55;
+    /* Gradient Colors*/
+
+    --sky: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+
+
+
+
+
+/*----------------------fonts--*/
+
+--oswald: 'oswald',cursive;
+--raleway: 'raleway',cursive;
+--noto: 'Noto',cursive;
+--oswalds: 'oswalds',cursive;
+
+--Abel:'Abel', cursive;
+
+--Lex: 'Lexend',cursive;
+
+--Livic:'Livic',cursive;
+
+--Anton: 'Anton',cursive;
+
+--Josefin: 'Josefin',cursive;
+
+
+
+}
+
+
+
+
+
+/*-------------------Global classes------------------*/
+
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration-line: none;
+    color: var(--text-grey) ;
+    
+}
+
+
+h1{
+    font-size: 2.2rem;
+    font-family: var(--oswald);
+}
+
+h2{
+    font-size: 2rem;
+    font-family: var(--raleway);
+}
+
+
+h3{
+    font-size: 2.5rem;
+    font-family: var(--Abel);
+}
+
+h4{
+    font-size: 1.8rem;
+    font-family: var(--raleway);
+}
+
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--raleway);
+}
+
+p{
+    font-family: var(--noto);
+    color: var(--text-grey);
+    justify-content: center;
+    margin: 0 1rem;
+    
+}
+
+.container{
+    margin: 0.5vw;
+}
+
+
+
+
+
+/*-------------------Global Classes ------------------*/
+
+/*-------------------Navigation ------------------*/
+
+
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1.5s ease-in;
+}
+
+
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+
+
+.nav .nav-items{
+    display: flex;
+    margin: 0%;
+}
+
+
+.nav .nav-items .nav-item{
+    padding: 1.3rem 1rem;
+    position: relative;
+    font-size: 1rem;
+    font-family: var(--noto);
+  
+}
+
+.nav .nav-items .nav-item a{
+    color: var(--text-wine2);
+    
+}
+
+
+.nav .nav-items .nav-item:hover{
+    background: var(--text-wine);
+    
+}
+
+
+.nav .nav-items .nav-item:hover a{
+    color: var(--text-gray);
+}
+
+
+.nav .nav-brand a{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    display: block;
+    color: var(--text-wine);
+    font-family: var(--oswalds);
+
+}
+
+
+.nav .social{
+    padding: 1.2rem 0;
+}
+
+
+.nav .social i{
+    padding: 0 .3rem;
+    color: var(--text-wine);
+}
+
+
+
+
+.nav .social i:hover{
+    color: var(--midnight);
+}
+
+
+
+
+.nav .toggle-collapse{
+    position:absolute;
+    top: 0%;
+    width: 85%;
+    cursor: pointer;
+    display: none;
+    
+
+}
+
+.nav .toggle-collapse .toggle-icons {
+display: flex;
+justify-content: flex-end;
+padding: 1.5rem 0;
+
+}
+
+
+
+.nav .toggle-collapse .toggle-icons a{
+    font-size: 1.6rem;
+    color: var(--midnight);
+}
+
+.collapse{
+    height: 60vh;
+}
+/*-------------------Navigation ------------------*/
+
+
+/*-----------------Site title------------------------*/
+main{
+    padding-bottom: 2rem;
+}
+
+
+
+main .site-title{
+    background:url('../assets/header.jpg');
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+main .site-title .site-background{
+    padding: 10rem;
+    text-align: center;
+    color: black ;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------Site title------------------------*/
+
+
+
+/*--------------Site Content-------------------------------------------*/
+main .container .pitch h3{
+    margin: 1rem;
+    padding-top: 1rem;
+    
+}
+
+main .container .pitch{
+    margin:0 1rem;
+}
+
+
+
+
+
+main .site-content{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 1rem 0;
+}
+main .site-content{
+    width: 100%;
+}
+
+
+
+main .site-content .courses .card {
+    width: 75%;
+    margin: 2.2rem 2rem;
+   
+    box-shadow: 20px 10px 30px rgb(169, 172, 169)
+}
+
+main .site-content .course > .course-image, .course-info{
+    padding: 0 2rem;
+    position: relative;
+    
+   
+}
+
+.course-info{
+    padding-bottom: 2rem;
+}
+
+
+main .site-content .course > .course-image > div{
+    overflow: hidden;
+}
+
+
+main .site-content .course > .course-image{
+    padding-top:2rem;
+}
+
+
+
+
+main .site-content .course > .course-image .img{
+    width: 100%;
+     
+    
+}
+
+
+main .site-content .course-info .course-btn{
+    
+    padding: .7rem 2rem;
+    background: var(--text-wine);
+    color: var(--white);
+    border-radius: 0;
+    margin: 0 1rem;
+}
+
+
+
+main .site-content .course-info .course-btn:hover{
+    background: var(--text-gray);
+    color: var(--wine2);
+}
+
+main .site-content .sidebar .categories{
+    margin: 1rem;
+    padding-bottom: .6rem;
+}
+
+
+main .feedback{
+    margin: 0rem 6rem;
+}
+
+
+
+main .feedbacks{
+    display: flex;
+    
+    
+    width: 100%;
+    margin: 3rem 2rem;
+}
+
+
+
+main .feedback .feedbacks > .student{
+
+    margin: 1rem;
+}
+
+main .feedback .feedbacks .student div{
+    padding: 2rem;
+    justify-content: center;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    
+}
+
+main .feedback .feedbacks .student div p{
+    justify-content: center;
+}
+
+main .feedback .feedbacks .student div .name{
+    font-size:1.3rem;    
+}
+
+main .feedback .feedbacks .student div .prof{
+    font-size: .9rem;
+}
+
+
+main .feedback .feedbacks .student .stumage{
+    border-radius: 50%;
+    padding-top: .4rem;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------sider bar-----------------*/
+
+.site-content .sidebar .cat-list{
+    font-family: var(--Livic);
+}
+
+
+.site-content > .sidebar .cat-list .list-items a{
+    background: var(--text-wine);
+    color: var(--white);
+    padding: .5rem 1rem;
+    margin: 1rem 0.2rem;
+    border-radius: 3rem;
+    width: 65%;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.site-content .sidebar .consult p{
+    justify-content: center;
+}
+
+
+.site-content .sidebar .consult .list-items a{
+font-size: 1.1rem;
+color: var(--text-wine);
+margin: 0.6rem .3rem;
+
+}
+
+
+
+
+.site-content .sidebar .newsletters{
+    padding-top: 7rem;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+
+
+.site-content .sidebar .newsletters .form-element{
+    padding: .5rem 2rem;
+}
+
+
+
+
+.site-content .sidebar .newsletters .email{
+    width:80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    font-size: 1rem;
+    font-family: var(--Lex);
+}
+
+
+
+.site-content .sidebar .newsletters .email-btn{  
+      margin: 1rem 0;
+      padding: .8rem 30%;
+      background: var(--text-wine);
+      color: var(--white);
+      border-radius: 0;
+    
+}
+
+
+.site-content .sidebar .newsletters .email-btn:hover{
+    background: var(--text-grey);
+
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------Site Content-------------------------------------------*/
+
+
+/*----------------------------------------------Footer-------------------------*/
+
+
+
+
+footer.footer{
+    height: 100%;
+    background: var(--text-wine);
+    position: relative;
+}
+
+
+footer.footer .container{
+    display:grid;
+    grid-template-columns: repeat(3,33%);
+}
+
+
+
+footer.footer .container>div{
+    flex-grow:1;
+    padding: 3rem .9rem;
+
+
+}
+
+footer.footer h2{
+    color: var(--white);
+}
+
+footer.footer p{
+    color: var(--white);
+}
+
+
+footer.footer .contanier .newsletter >div{
+   
+    display: inline-block;
+}
+
+
+footer.footer input{
+    padding: .5rem .9rem;
+    background: transparent;
+    color: white;
+    font-size: .8rem;
+    width: 73%;
+    border: transparent;
+
+}
+
+
+footer.footer span{
+    background: var(--gradient);
+    padding: .6rem .7rem;
+    cursor: pointer;
+}
+
+
+footer.footer .contact-us div i{
+    color: var(--white);
+    padding: 0 .5rem;
+}
+
+
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top:50%;
+}
+
+
+
+
+footer.footer .move-up span{
+    color: var(--midnight);
+    background: none;
+}
+
+
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*----------------------------Faculty Page CSS------------------------------------------*/
+
+main .fa-container .fa-pitch h2{
+    margin:3rem .9rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+main .fa-container .fa-pitch p{
+    font-size: 1rem;
+    padding: 0 2.1rem;
+}
+
+
+main .fa-pitch .faculty-members{
+    margin:1.5rem .9rem;
+}
+
+
+main .fa-pitch .faculty-members .dean{
+    margin: 2rem;
+}
+
+
+main .fa-pitch .faculty-members .dean .faculty-images{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding-top:3rem;
+    
+}
+
+main .fa-pitch .faculty-members .flex{
+    margin: 4rem 4rem;
+    display: flex;
+}
+
+
+main .fa-pitch .faculty-members .dean1 .faculty-images{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding-top:3rem;
+    
+}
+
+
+
+main .fa-pitch .faculty-members .dean h1{
+ text-align: center;
+}
+
+main .fa-pitch .faculty-members .dean1 h1{
+    text-align: center;
+   }
+
+
+main .fa-pitch .faculty-members .dean h4{
+    text-align: center;
+}
+
+main .fa-pitch .faculty-members .dean1 h4{
+    text-align: center;
+}
+
+
+main .fa-pitch .faculty-members .dean p{
+    margin: 1rem 9rem;
+    padding: 2rem 0;
+    font-size:1.1rem;
+    
+}
+
+
+main .fa-pitch .faculty-members .dean1 p{
+    margin: 1rem 6rem;
+    padding: 2rem 0;
+    font-size:1-1rem;
+    
+}
+main .fa-pitch .faculty-members .dean {
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    margin-top:6rem ;
+}
+
+main .fa-pitch .faculty-members .dean1 {
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    margin:3rem ;
+}
+
+main .fa-pitch .faculty-members .dean .experience{
+    padding-bottom: 2rem;
+    justify-content: center;
+   
+}
+
+main .fa-pitch .faculty-members .dean1 .experience{
+    padding-bottom: 2rem;
+    justify-content: center;
+    margin: 2rem;
+   
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 750px){
+ .nav .nav-menu, .nav .nav-items{
+     flex-direction:column;
+ }   
+ .nav .toggle-collapse{
+     display: initial;
+ }
+}
